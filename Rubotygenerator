@@ -1,0 +1,17 @@
+user_name "h2bot"
+
+gem_class_name "H2bot"
+gem_name "h2bot"
+
+description "A Ruboty Handler description"
+
+env do |e|
+  #e.name "ENV1"
+  #e.description "ENV1 desc"
+end
+
+command do |c|
+  c.name "uranai"
+  c.pattern "\\Aうらない\s\d{3,4}\\Z"
+  c.description "uranai yo"
+end
