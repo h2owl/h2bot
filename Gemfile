@@ -9,3 +9,5 @@ gem 'ruboty'
 gem 'ruboty-slack_rtm'
 gem 'ruboty-generator'
 gem 'ruboty-h2bot', path: '/home/vagrant/git/slack_bot1/ruboty-h2bot'
+
+gem 'nokogiri'
