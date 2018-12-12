@@ -26,7 +26,7 @@ module Ruboty
 
       def uranai(message)
         target_date_num = message.match_data[1].to_i
-        str_for_date = "2000/%02d/%02d" % ("%04d" % target_date_num).scan(/.{2}/)
+        str_for_date = "2000/%s/%s" % ("%04d" % target_date_num).scan(/.{2}/)
         begin
           date = Date.parse(str_for_date)
           user_seiza = get_seiza_from_date(date)

@@ -6,7 +6,7 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 # gem "rails"
 gem 'ruboty'
-gem 'ruboty-slack_rtm'
+#gem 'ruboty-slack_rtm'
 gem 'ruboty-generator'
 gem 'ruboty-h2bot', path: './ruboty-h2bot'
 
