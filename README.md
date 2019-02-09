@@ -1,5 +1,3 @@
-this is my challenge to make a slackbot
+this is a ruboty-bot
 
-`@h2bot うらない 0123`
 
-bot returns fortune text from fortune.yahoo.co.jp
