@@ -1,7 +1,13 @@
-PATH
-  remote: ruboty-h2bot
+GIT
+  remote: git://github.com/h2owl/ruboty-slack_rtm.git
+  revision: 169fdce163b863ea28fc0c6191d57ae85ce7db33
+  branch: fix/bind-before-restart-mainloop
   specs:
-    ruboty-h2bot (0.1.0)
+    ruboty-slack_rtm (3.1.0)
+      faraday (~> 0.11)
+      ruboty (>= 1.1.4)
+      slack-api (~> 1.6)
+      websocket-client-simple (~> 0.3.0)
 
 GEM
   remote: https://rubygems.org/
@@ -28,12 +34,12 @@ GEM
       concurrent-ruby (~> 1.0)
     mem (0.1.5)
     method_source (0.9.2)
-    mini_portile2 (2.3.0)
+    mini_portile2 (2.4.0)
     minitest (5.11.3)
     multi_json (1.13.1)
     multipart-post (2.0.0)
-    nokogiri (1.8.5)
-      mini_portile2 (~> 2.3.0)
+    nokogiri (1.10.1)
+      mini_portile2 (~> 2.4.0)
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
@@ -46,14 +52,15 @@ GEM
       dotenv
       mem
       slop
+    ruboty-fortune (0.1.0.2)
+      nokogiri
+      ruboty
     ruboty-generator (1.0.5)
       bundler
       thor (~> 0.18.1)
-    ruboty-slack_rtm (3.1.0)
-      faraday (~> 0.11)
-      ruboty (>= 1.1.4)
-      slack-api (~> 1.6)
-      websocket-client-simple (~> 0.3.0)
+    ruboty-wikipedia (0.1.3)
+      ruboty
+      wikipedia-client
     slack-api (1.6.1)
       faraday (~> 0.11)
       faraday_middleware (~> 0.10.0)
@@ -71,17 +78,18 @@ GEM
     websocket-driver (0.7.0)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.3)
+    wikipedia-client (1.10.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  nokogiri
   pry-byebug
   ruboty
+  ruboty-fortune
   ruboty-generator
-  ruboty-h2bot!
-  ruboty-slack_rtm
+  ruboty-slack_rtm!
+  ruboty-wikipedia
 
 BUNDLED WITH
    1.17.1

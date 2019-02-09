@@ -4,13 +4,12 @@ source "https://rubygems.org"
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
-# gem "rails"
 gem 'ruboty'
-gem 'ruboty-slack_rtm'
+gem 'ruboty-slack_rtm', :git => 'git://github.com/h2owl/ruboty-slack_rtm.git',
+              		:branch => "fix/bind-before-restart-mainloop"
 gem 'ruboty-generator'
-gem 'ruboty-h2bot', path: './ruboty-h2bot'
-
-gem 'nokogiri'
+gem 'ruboty-fortune'
+gem 'ruboty-wikipedia'
 
 group :development, :test do
   gem 'pry-byebug'
